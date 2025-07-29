@@ -23,8 +23,15 @@
 </head>
 
 <body>
+    
     <section class="content">
         <h1>Pokedex</h1>
+
+        <div class="search-container">
+            <input type="text" class="input"  placeholder="Enter the Pokémon ID / Name or Type">
+            <button class="btnSearch" type="button" onclick="getPokemon()">Search</button>
+            <button class="btnClear" type="button" onclick="clearSearch()">Clear</button>
+        </div>
 
         <ol id="pokemonList" class="pokemons">
             <!-- ..... Pokemons here ..... -->
@@ -36,7 +43,7 @@
             </button>
         </div>
     </section>
-
+    
     <!-- Nosso JS -->
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>
